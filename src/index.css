@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/public/assets/fonts/Prompt-Regular.ttf');
+
+}
+
+body {
+  overflow: hidden;
+}
+html,
+body,
+#root,
+.app,
+.content{
+  /* font-family: 'Prompt', sans-serif !important; */
+  width: 100%;
+  height: 100%;
+  background-color:white;
+  print-color-adjust: economy;
+}
+.content > div:first-child {
+  height: 7.5%;
+}
+
+
+.content_body{
+  background-color: aliceblue;
+  width: 100%;
+  height: 92.5%;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.app {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+
+/* เกี่ยวกับ Badge  */
+
+
+.MuiContainer-root{
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+  
+  z-index: 11000;
+}
+
+body.swal2-height-auto{
+  height: 100%;
+}
+
+
+
+
+
+
